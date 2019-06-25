@@ -11,7 +11,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Hwllo world'
+                echo 'Building ...'
+            }
+        }
+        stage ('Deploy'){
+            steps {
+                echo 'Code deployrd.'
             }
         }
 
